@@ -1,3 +1,4 @@
+/*
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AsyncExampleComponent } from './async-example.component';
@@ -76,7 +77,7 @@ describe('AsyncExampleComponent', () => {
       expect(result).toBe('Hello, Alice!');
     });
   });
-  //********Обзор метода callback done которые используются в основном для observers******
+  //!********Обзор метода callback done которые используются в основном для observers******
   // callback done -это параметр который можно передать в самую первую функицю теста что бы тест
   //завершился только тогда когда done() будет вызван, как концевик поставить
   it('asyncExample возвращает промис с указанным параметром - callback done', done =>{
@@ -131,7 +132,7 @@ describe('AsyncExampleComponent', () => {
       done();
     })
   })
-  //************Если зависимость вернула ошибку как это проверять***********************
+  //!************Если зависимость вернула ошибку как это проверять***********************
   it('sayHiObservable выводит ошибку если сервис вернул ошибку - callback done', done =>{
     fakeDependencyService.observerExample.and.returnValue(throwError('сервис недоступен'));
     component.sayHiObservable('Dan').subscribe(undefined, error => {
@@ -139,7 +140,7 @@ describe('AsyncExampleComponent', () => {
       done();
     })
   })
-  //****************использование jasmine Clock********************************
+  //!****************использование jasmine Clock********************************
   it('setNameAfterMinute записывает указанное имя в поле класса name спустя минуту', () => {
     //уставнавливаем clock() для этого теста
     jasmine.clock().install();
@@ -154,3 +155,4 @@ describe('AsyncExampleComponent', () => {
 
   })
 });
+*/
