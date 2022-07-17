@@ -1,4 +1,6 @@
 <div>
-  <span>{{userFirstName}}</span>
+  <!--ngClass добавляет класс fill если isNameFull присылает true}-->
+  <span class="firstName" [ngClass]="{'fill': isNameFull}" >{{userFirstName}}</span>
   <span>{{userSecondName}}</span>
+  <button (click)="clickOnButton()">Click</button>
 </div>
